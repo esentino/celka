@@ -1,24 +1,24 @@
 # Manual instalacyjny
 ## Instalacja virtualenv-a
-
+```
 virtualenv -p python3 env
-
+```
 ## Aktywowanie virtualenva
-
+```
 . env/bin/active
-
+```
 ## Instacja niezbędnych bibiotek
-
+```
 pip install -r requirements.txt
-
+```
 ## Instacja migracja tabeli do wyników zadań
-
+```
 python manage.py migrate django_celery_results
-
+```
 ## uruchamianie workera celery
-
+```
 celery -A celka worker -l info
-
+```
 gdzie:
 
 - celka - to nazwa aplikacji
@@ -26,9 +26,9 @@ gdzie:
 - l - logowanie ustawione na info
 
 ## Uruchamianie webserwera
-
+```
 pyton manage.py runserver
-
+```
 
 # Działanie/wyświetlanie
 ## Główny widok

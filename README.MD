@@ -54,3 +54,10 @@ Po wejściu na stronę http://localhost:8000 powinno się zobaczyć listę zada�
 <Task: 24a7c83c-700c-4b68-ac0e-ab3f8822f80a (SUCCESS)> 100
 
 oraz link, która zleca nowe zadanie zsumowanie 2 liczb całkowityc z zakresu 0 - 100 dodatkowo do tego zadania jest dołożony losowy sleep, aby zadanie wykonywało się trochę dłużej udawało, że jest to pracochłonna operacja.  
+
+# Ostatnie słowo
+## Zbudowane dzięki
+
+* [Django](https://www.djangoproject.com/) - Web Framework
+* [Celery](http://www.celeryproject.org/) - Rozproszona kolejka zadań :)
+* [SQLite](https://www.sqlite.org/) - Silnik bazodanowy

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'add' %}">Dodaj zadanie</a>
+{% for task in l %}
+<p>{{task}} <strong>{{task.result}}</strong></p>
+{% endfor %}
+</body>
+</html>

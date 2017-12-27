@@ -61,7 +61,12 @@ Po wejściu na stronę http://localhost:8000 powinno się zobaczyć listę zada�
 
 <Task: 24a7c83c-700c-4b68-ac0e-ab3f8822f80a (SUCCESS)> 100
 
-oraz link, która zleca nowe zadanie zsumowanie 2 liczb całkowityc z zakresu 0 - 100 dodatkowo do tego zadania jest dołożony losowy sleep, aby zadanie wykonywało się trochę dłużej udawało, że jest to pracochłonna operacja.  
+oraz linki:
+
+- Dodaj zadanie - zlec nowe zadanie zsumowanie 2 liczb całkowityc z zakresu 0 - 100 dodatkowo do tego zadania jest dołożony losowy sleep, aby zadanie wykonywało się trochę dłużej udawało, że jest to pracochłonna operacja.
+- Dodaj 100 liczb do historii - dodaje 100 rekordów do bazy danych w pętli
+- Dodaj 100 liczb do historii (jedną paczką) - dodaje 10 rekordów do bazy danych przy użyciu bulk_create
+
 
 # Ostatnie słowo
 ## Zbudowane dzięki

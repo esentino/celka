@@ -28,10 +28,14 @@ def add_history_bulk(number_of_values=100, minimum=0, maximum=100):
     :param maximum: maximum value
     :return:
     """
+    # Preper list of history element
     history_list = []
     for counter in range(number_of_values):
+        # Create history element without save to database
         new_history = History(value = randint(minimum, maximum))
+        # Add element do list
         history_list.append(new_history)
+    # Create all elements in one shot
     History.objects.bulk_create(history_list)
     return True
 

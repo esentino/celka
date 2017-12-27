@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from celina.views import ListView, AddView
+from celina.views import ListView, AddView, AddHistory, AddHistoryBulk
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ListView.as_view(), name='list'),
-    path('add', AddView.as_view(), name="add")
+    path('add', AddView.as_view(), name="add"),
+    path('addHistory', AddHistory.as_view(), name="addHistory"),
+    path('addHistoryBulk', AddHistoryBulk.as_view(), name="addHistoryBulk")
 ]

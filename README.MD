@@ -14,7 +14,15 @@ pip install -r requirements.txt
 ## Instacja migracja tabeli do wyników zadań
 ```
 python manage.py migrate django_celery_results
+
 ```
+## Instalacja migracji dla wyników zadań w tabeli History
+```
+python manage.py makemigrations celina
+python manage.py migrate celina
+```
+
+
 ## uruchamianie workera celery
 ```
 celery -A celka worker -l info

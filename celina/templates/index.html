@@ -6,6 +6,8 @@
 </head>
 <body>
 <a href="{% url 'add' %}">Dodaj zadanie</a>
+<a href="{% url 'addHistory' %}">Dodaj 100 liczb do historii.</a>
+<a href="{% url 'addHistoryBulk' %}">Dodaj 100 liczb do historii (jedną paczką).</a>
 {% for task in l %}
 <p>{{task}} <strong>{{task.result}}</strong></p>
 {% endfor %}

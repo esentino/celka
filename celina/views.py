@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.views import View
 from django_celery_results.models import TaskResult
 from random import randint
-from .tasks import add
+from .tasks import add, add_history, add_history_bulk
 
 
 class ListView(View):
@@ -19,4 +19,14 @@ class AddView(View):
         number_one = randint(0, 100)
         number_two = randint(0, 100)
         add.delay(number_one, number_two)
+        return redirect(reverse(viewname='list'))
+
+class AddHistory(View):
+    def get(self, request):
+        add_history.delay(100)
+        return redirect(reverse(viewname='list'))
+
+class AddHistoryBulk(View):
+    def get(self, request):
+        add_history_bulk.delay(100)
         return redirect(reverse(viewname='list'))
